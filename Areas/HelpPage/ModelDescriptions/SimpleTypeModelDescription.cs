@@ -1,0 +1,6 @@
+namespace TwilioAPi.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}
