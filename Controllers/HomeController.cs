@@ -15,13 +15,13 @@ namespace TwilioAPi.Controllers
 
             return View();
         }
-        string AccountSid = "AC55bed24d780411342a106bd2a70835d8";
-        string AuthToken = "d1f955600c524c500ad4d3c671833cd8";
+        string AccountSid = "AC55xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        string AuthToken = "d1f9xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         public ActionResult SendMessages(string cellNo, string tokenNo)
         {
             var twilio = new TwilioRestClient(AccountSid, AuthToken);
             var message = twilio.SendMessage(
-                "+447481340446", // From (Replace with your Twilio number)
+                "+4xxxxxxxxxxxxxxxxxx", // From (Replace with your Twilio number)
                 cellNo, // To (Replace with your phone number)
                tokenNo +""+ "Auth Code for littlebird app"
                 );
